@@ -1,0 +1,3 @@
+(sym_lib_table (version 7)
+  (lib (name "pager") (type "KiCad") (uri "${KIPRJMOD}/pager.kicad_sym") (options "") (descr "PE4259"))
+)

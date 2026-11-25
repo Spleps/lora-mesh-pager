@@ -1,0 +1,5 @@
+(version 1)
+# SMA J5 монтується на торець плати: її контакти за конструкцією доходять до краю.
+(rule "board edge"
+  (condition "!(A.memberOfFootprint('J5') || B.memberOfFootprint('J5'))")
+  (constraint edge_clearance (min 0.3mm)))

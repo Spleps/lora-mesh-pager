@@ -1,0 +1,20 @@
+{
+  "kind": "original synthetic simulation, not measurement",
+  "payload_bytes": 64,
+  "bandwidth_hz": 125000,
+  "coding_rate": "4/5",
+  "preamble_symbols": 8,
+  "packet_crc": true,
+  "header": "explicit",
+  "assumptions": "Original offline Monte Carlo experiment; no downloaded code or network.\n\nExploratory model only, not a Meshtastic emulator or radio measurement.\nEach run samples a connected geometric topology and independent message times.\nFlooded packets use hop limit, deduplication, random relay backoff, half-duplex,\nsingle-channel destructive overlap, and a rolling one-hour TX duty ledger.\nNo capture, interference immunity, CAD, ACK, retransmission, fading or encryption.\nAll model assumptions are recorded beside results. CPU effort is logged.\n",
+  "settings": 576,
+  "seed_origin": 202611090000,
+  "replications_per_setting": 48,
+  "planned_trials": 27648,
+  "started_utc": "2026-11-09T13:08:11.889419+00:00",
+  "complete_factorial_design": true,
+  "trials": 27648,
+  "resumed_from": 15570,
+  "finished_utc": "2026-11-09T16:17:29.499064+00:00",
+  "note": "Прерван в 15:48 вместе с SSH-сессией; досчитан тем же генератором seed в 3 процесса."
+}

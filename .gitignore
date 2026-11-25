@@ -1,0 +1,6 @@
+route/
+*.kicad_prl
+.history/
+__pycache__/
+*.lck
+*-backups/

@@ -1,0 +1,77 @@
+Ref,Value,Footprint,Note
+C1,4.7u,Capacitor_SMD:C_0805_2012Metric,
+C2,4.7u,Capacitor_SMD:C_0805_2012Metric,
+C3,1u,Capacitor_SMD:C_0603_1608Metric,
+C4,10u,Capacitor_SMD:C_0805_2012Metric,
+C5,100n,Capacitor_SMD:C_0603_1608Metric,
+C6,100n,Capacitor_SMD:C_0603_1608Metric,
+C7,10u,Capacitor_SMD:C_0805_2012Metric,
+C8,100n,Capacitor_SMD:C_0603_1608Metric,
+C9,1u,Capacitor_SMD:C_0603_1608Metric,
+C10,10u,Capacitor_SMD:C_0805_2012Metric,
+C11,100n,Capacitor_SMD:C_0603_1608Metric,біля VBAT/VBAT_IO (Semtech C18)
+C12,470n,Capacitor_SMD:C_0603_1608Metric,Semtech C17
+C13,47n,Capacitor_SMD:C_0603_1608Metric,
+C14,47p,Capacitor_SMD:C_0603_1608Metric,
+C15,100n,Capacitor_SMD:C_0603_1608Metric,
+C16,10p,Capacitor_SMD:C_0603_1608Metric,
+C17,6.8p,Capacitor_SMD:C_0603_1608Metric,"ФНЧ 5 порядку (Чебишев 0,1 дБ, зріз ~500 МГц, 50 Ом), C0G 2%; власний розрахунок"
+C18,12p,Capacitor_SMD:C_0603_1608Metric,"ФНЧ, C0G 2%"
+C19,6.8p,Capacitor_SMD:C_0603_1608Metric,"ФНЧ, C0G 2%"
+C20,100p,Capacitor_SMD:C_0603_1608Metric,розділовий
+C21,1n,Capacitor_SMD:C_0603_1608Metric,Semtech C15
+C22,1n,Capacitor_SMD:C_0603_1608Metric,Semtech C14
+C23,100p,Capacitor_SMD:C_0603_1608Metric,розділовий
+C24,TBD 433,Capacitor_SMD:C_0603_1608Metric,LC-балун RX: підбір під 433 МГц
+C25,TBD 433,Capacitor_SMD:C_0603_1608Metric,LC-балун RX
+C26,100p,Capacitor_SMD:C_0603_1608Metric,розділовий
+C27,TBD 433,Capacitor_SMD:C_0603_1608Metric,π-узгодження антени
+C28,TBD 433,Capacitor_SMD:C_0603_1608Metric,π-узгодження антени
+C29,TBD 433,Capacitor_SMD:C_0603_1608Metric,"режектор 2-ї гармоніки: C29 || L3 резонує на 2f0 = 868 МГц (як C4 у Semtech AN1200.40, п. 3.1.3)"
+D1,B5819W,Diode_SMD:D_SOD-123,
+D2,RED,LED_SMD:LED_0603_1608Metric,
+D3,GREEN,LED_SMD:LED_0603_1608Metric,
+FB1,600R@100MHz,Inductor_SMD:L_0603_1608Metric,"феритова намистина 0603, 600 Ом на 100 МГц, >=500 мА, DCR<=0,3 Ом (напр. BLM18PG601SN1D)"
+J1,USB-C,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,
+J2,BATT Li-ion 1S,Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,
+J3,OLED SSD1306 I2C,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+J4,UART,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+J5,SMA 50 Ом,Connector_Coaxial:SMA_Amphenol_132289_EdgeMount,
+L1,15u,Inductor_SMD:L_Coilcraft_LPS3010,"LPS3010-153, DCR<=2 Ом, Idc>=100 мА (Semtech 5.1.5)"
+L2,47n,Inductor_SMD:L_0603_1608Metric,дросель живлення PA (як L8 у DATALOGGER02); перевірити для 433
+L3,TBD 433,Inductor_SMD:L_0603_1608Metric,"узгодження PA, підбір NanoVNA/за ref-design 433-490"
+L4,22n,Inductor_SMD:L_0603_1608Metric,ФНЧ
+L5,22n,Inductor_SMD:L_0603_1608Metric,ФНЧ
+L6,TBD 433,Inductor_SMD:L_0603_1608Metric,LC-балун RX
+L7,TBD 433,Inductor_SMD:L_0603_1608Metric,LC-балун RX
+L8,0R,Inductor_SMD:L_0603_1608Metric,π-узгодження: перемичка 0 Ом до налаштування
+Q1,AO3401A,Package_TO_SOT_SMD:SOT-23,
+R1,5.1k,Resistor_SMD:R_0603_1608Metric,
+R2,5.1k,Resistor_SMD:R_0603_1608Metric,
+R3,2k,Resistor_SMD:R_0603_1608Metric,Iзар = 1000/R = 500 мА
+R4,1k,Resistor_SMD:R_0603_1608Metric,
+R5,10k,Resistor_SMD:R_0603_1608Metric,"стягує затвор Q1; 10k, щоб зворотний струм витоку D1 не тримав Q1 закритим"
+R6,100k,Resistor_SMD:R_0603_1608Metric,
+R7,100k,Resistor_SMD:R_0603_1608Metric,
+R8,100k,Resistor_SMD:R_0603_1608Metric,
+R9,10k,Resistor_SMD:R_0603_1608Metric,
+R10,10k,Resistor_SMD:R_0603_1608Metric,
+R11,1k,Resistor_SMD:R_0603_1608Metric,
+R12,4.7k,Resistor_SMD:R_0603_1608Metric,"ставити, якщо на модулі немає підтяжок"
+R13,4.7k,Resistor_SMD:R_0603_1608Metric,"ставити, якщо на модулі немає підтяжок"
+R14,220,Resistor_SMD:R_0603_1608Metric,
+R15,100,Resistor_SMD:R_0603_1608Metric,Semtech R3
+R16,100,Resistor_SMD:R_0603_1608Metric,Semtech R4
+SW1,POWER,Button_Switch_SMD:SW_SPDT_PCM12,
+SW2,RESET,Button_Switch_SMD:SW_SPST_TL3342,
+SW3,BOOT,Button_Switch_SMD:SW_SPST_TL3342,
+SW4,UP,Button_Switch_SMD:SW_SPST_TL3342,
+SW5,DOWN,Button_Switch_SMD:SW_SPST_TL3342,
+SW6,OK,Button_Switch_SMD:SW_SPST_TL3342,
+U1,ESP32-S3-WROOM-1-N16R8,RF_Module:ESP32-S3-WROOM-1,
+U2,SX1262IMLTRT,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,
+U3,MCP73831-2-OT,Package_TO_SOT_SMD:SOT-23-5,
+U4,AP2112K-3.3,Package_TO_SOT_SMD:SOT-23-5,
+U5,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,
+U6,PE4259,Package_TO_SOT_SMD:SOT-363_SC-70-6,"single-pin режим: вив.6 VDD=3,3 В, вив.4 CTRL=DIO2; CTRL=1 (TX) -> RFC-RF1, CTRL=0 (RX) -> RFC-RF2 (pSemi DOC-03694, табл. 5)"
+Y1,TG2520SMN 32MHz 1.8V,Oscillator:Oscillator_SMD_SeikoEpson_TG2520SMN-xxx-xxxxxx-4Pin_2.5x2.0mm,"clipped sine <=1,2 Vpp; напруга = SetDIO3AsTCXOCtrl"
